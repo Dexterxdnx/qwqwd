@@ -1,0 +1,372 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color:#FFFAE6; 
+}
+h2 {
+    position: relative;
+    top:40px;
+    color:beige;
+}
+.gambar {
+    width: 310px;
+    height: 280px;
+    margin-top: 50px;
+}
+
+.navigasi {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 50px;
+}
+.navigasi a {
+    color:black;
+    display: inline;
+    padding: 5px 10px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background 0.5s, color 0.5s;
+     
+}
+.navigasi a:hover{
+    background-color: #002379;
+    color: white;
+}
+/* Responsif untuk mobile */
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.hamburger-menu .bar {
+    width: 30px;
+    height: 4px;
+    background-color: #002379;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+/* Menu mobile */
+.menu-mobile {
+    display: none;
+    flex-direction: column;
+    background-color: #002379;
+    padding: 10px;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    z-index: 999;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.menu-mobile a {
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    text-align: left;
+}
+
+.menu-mobile a:hover {
+    background-color: #ff9f66;
+    border-radius: 5px;
+}
+
+/* Tampilkan hamburger menu dan sembunyikan navigasi di layar kecil */
+@media (max-width: 768px) {
+    .navigasi {
+        display: none;
+    }
+    
+    .hamburger-menu {
+        display: block;
+    }
+
+    .menu-mobile.active {
+        display: flex;
+    }
+}
+
+/* STYLE JUMLAH */
+body {
+    background-color: #FFFAE6;
+}
+.jumlah {
+    width: 80%;
+    height: 350px;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 100px;
+    background-color:#FF9F66;
+    border-radius: 50px;
+}
+/* Styling tabel */
+.tabel {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+.tabel td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Styling input */
+.inpJum1, .inpJum2 {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effect for input fields */
+.inpJum1:hover, .inpJum2:hover {
+    border-color: rgb(71, 71, 238);
+    box-shadow: 0 0 5px rgb(71, 71, 238);
+}
+
+/* Styling button */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color:#002379;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: rgb(50, 50, 180);
+}
+
+/* PENGURANGAN */
+
+.kurang {
+    width: 80%;
+    height: 350px;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 100px;
+    background-color:#FF9F66;
+    border-radius: 50px;
+}
+/* Styling tabel */
+.tabelkur {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+.tabelkur td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Styling input */
+.inpKur1, .inpKur2 {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effect for input fields */
+.inpKur1:hover, .inpKur2:hover {
+    border-color: rgb(71, 71, 238);
+    box-shadow: 0 0 5px rgb(71, 71, 238);
+}
+
+/* Styling button */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color:#002379;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: rgb(50, 50, 180);
+}
+
+/* PERKALIAN */
+.kali {
+    width: 80%;
+    height: 350px;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 100px;
+    background-color:#FF9F66;
+    border-radius: 50px;
+}
+/* Styling tabel */
+.tabelkal {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+.tabelkal td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Styling input */
+.inpKal1, .inpKal2 {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effect for input fields */
+.inpKal1:hover, .inpKal2:hover {
+    border-color: rgb(71, 71, 238);
+    box-shadow: 0 0 5px rgb(71, 71, 238);
+}
+
+/* Styling button */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color:#002379;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: rgb(50, 50, 180);
+}
+/* PEMBAGIAN */
+.Bagi {
+    width: 80%;
+    height: 350px;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 100px;
+    background-color:#FF9F66;
+    border-radius: 50px;
+}
+/* Styling tabel */
+.tabelBag {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+.tabelBag td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Styling input */
+.inpBag1, .inpBag2 {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effect for input fields */
+.inpBag1:hover, .inpBag2:hover {
+    border-color: rgb(71, 71, 238);
+    box-shadow: 0 0 5px rgb(71, 71, 238);
+}
+
+/* Styling button */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color:#002379;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: rgb(50, 50, 180);
+}
+
+/* MODULUS */
+.mod {
+    width: 80%;
+    height: 350px;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 100px;
+    background-color:#FF9F66;
+    border-radius: 50px;
+}
+/* Styling tabel */
+.tabelDul{
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    border-collapse: collapse;
+}   
+
+.tabelDul td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Styling input */
+.inpModu1, .inpModu2 {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effect for input fields */
+.inpModu1:hover, .inpModu2:hover {
+    border-color: rgb(71, 71, 238);
+    box-shadow: 0 0 5px rgb(71, 71, 238);
+}
+
+/* Styling button */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color:#002379;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: rgb(50, 50, 180);
+}

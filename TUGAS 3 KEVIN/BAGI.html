@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TUGAS 3</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="navigasi">
+        <a href="HOME.html"> HOME</a> 
+        <a href="JUMLAH.html"> OPERASI JUMLAH</a>  
+        <a href="KURANG.html"> OPERASI PENGURANGAN</a> 
+        <a href="KALI.html"> OPERASI PERKALIAN</a>  
+        <a href="BAGI.html"> OPERASI PEMBAGIAN</a>  
+        <a href="MODULUS.html"> OPERASI MODULUS</a>  
+</div>
+
+<div class="hamburger-menu" onclick="toggleMenu()">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+</div>
+
+<div class="menu-mobile">
+    <a href="HOME.html"> HOME</a> 
+    <a href="JUMLAH.html"> OPERASI JUMLAH</a>  
+    <a href="KURANG.html"> OPERASI PENGURANGAN</a> 
+    <a href="KALI.html"> OPERASI PERKALIAN</a>  
+    <a href="BAGI.html"> OPERASI PEMBAGIAN</a>  
+    <a href="MODULUS.html"> OPERASI MODULUS</a>  
+</div>
+
+    
+
+<div class="Bagi">
+    <h2>PEMBAGIAN</h2>
+    <table class="tabelBag" border="0">
+            <tr>
+               <td>
+                   <label for="nilai1">NILAI PERTAMA</label>
+                </td>    
+                <td>
+                    <input class="inpBag1" type="number" id="nilai1" />
+                </td>
+            </tr>
+        <br/>
+            <tr>
+                 <td>
+                    <label for="nilai2">NILAI KEDUA</label>
+                </td>
+                <td>
+                    <input class="inpBag2" type="number" id="nilai2" />
+                </td>
+            </tr>
+        <br/>
+        <tr>
+            <td colspan="2">
+                <button onclick="Bagii()">SUBMIT</button>
+            </td>
+        </tr>
+        
+        </table>
+    </div>
+
+    <script>
+            function Bagii() {
+                let nilai1 = parseFloat(document.getElementById("nilai1").value);
+                let nilai2 = parseFloat(document.getElementById("nilai2").value);
+                let hasil = nilai1 / nilai2;
+                console.log("Hasinya adalah: " + hasil);
+                alert("Hasilnya adalah: " + hasil);
+            }
+        </script>
+        <script>
+                function toggleMenu() {
+                    const menu = document.querySelector('.menu-mobile');
+                    menu.classList.toggle('active');
+                }
+            </script>
+</body>
+</html>
